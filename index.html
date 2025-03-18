@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            text-align: center;
+        }
+        .container {
+            padding: 50px;
+            color: white;
+        }
+        h1 {
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 2s forwards;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards 0.5s;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            font-size: 20px;
+            margin: 10px 0;
+            opacity: 0;
+            animation: fadeIn 2s forwards 1s;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background: #ff5733;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .btn:hover {
+            background: #c70039;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Animated Website</h1>
+        <p>This is a simple website with animations using CSS.</p>
+        <ul>
+            <li>Feature 1: Smooth animations</li>
+            <li>Feature 2: Responsive design</li>
+            <li>Feature 3: Interactive buttons</li>
+        </ul>
+        <button class="btn">Click Me</button>
+    </div>
+</body>
+</html>
